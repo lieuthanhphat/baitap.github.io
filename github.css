@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+#inputemail{
+	margin-left: 200px;
+	width: 100%;
+	width: 400px;
+}
+.col-md-2{
+	width: 100px;
+	margin-right: 20px
+}
+.jumbotron-fluid.my-auto{
+	height: 400px;
+	margin-top: auto;
+}
+#row1{
+	margin-top: 100px
+}
+#jbt{
+	height: 400px
+}
+.col-md-4{
+	margin-top: 100px
+}
+#inputemail2{
+	margin-left: 200px;
+	width: 100%;
+	width: 400px;
+}
