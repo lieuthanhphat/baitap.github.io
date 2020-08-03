@@ -15,8 +15,22 @@
 	<link href="../../../css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="../../../html/web2.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="github.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<style>
+		#topbtn{
+			right: 30px;
+			bottom: 30px;
+			background-color: #FF0004;
+			display: none;
+			border: none;
+			z-index: 99;
+			position: fixed;
+			outline: none;
+		}
+	</style>
 </head>
 <body>
+	<button id="topbtn" onClick="topF unction()" title="on top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button> 
 	<nav class="navbar navbar-light bg-light">
 		<div class="container">
 			<a href="#" class="navbar-brand">ID Phat</a>
@@ -46,17 +60,17 @@
 	<div class="jumbotron-fluid my-auto">
 		<div class="container">
 			<div class="row my-auto" id="row1">
-					<div class="col-md-4 text-center">
+					<div data-aos="fade-right" class="col-md-4 text-center">
 						<img src="pexels-photo-1449844.jpeg" width="100">
 						<h3 class="display-5 mt-3">Fully Responsive</h3>
 						<p>This theme will look great on any device, no matter the size!</p>
 					</div>
-					<div class="col-md-4 text-center">
+					<div data-aos="fade-down" class="col-md-4 text-center">
 						<img src="pexels-photo-1449844.jpeg" width="100">
 						<h3 class="display-5 mt-3">Bootstrap 4 Ready</h3>
 						<p>Featuring the latest build of the new Bootstrap 4 framework!</p>
 					</div>
-					<div class="col-md-4 text-center">
+					<div data-aos="fade-left" class="col-md-4 text-center">
 						<img src="pexels-photo-1449844.jpeg" width="100">
 						<h3 class="display-5 mt-3">Easy to Use</h3>
 						<p>Ready to use with your own content, or customize the source files!</p>
@@ -67,22 +81,22 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6 my-auto">
-				<div class="container">
+				<div data-aos="flip-left" class="container">
 				<h1>Fully Responsive Design</h1>
 				<p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively! When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
 				</div>
 			</div>
-			<div class="col-md-6 px-0">
+			<div data-aos="fade-left" class="col-md-6 px-0">
 				<img src="ducati-shows-the-draxter-concept-a-sport-interpretation-of-the-xdiavel-103937_1.jpg" width="100%" height="480">
 			</div>
 		</div>
 	</div>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-6 px-0">
+			<div data-aos="fade-right" class="col-md-6 px-0">
 				<img src="296_236776611.jpg" width="100%" height="480">
 				</div>
-			<div class="col-md-6 my-auto mx-auto">
+			<div data-aos="flip-right" class="col-md-6 my-auto mx-auto">
 				<h1>Updated For Bootstrap 4</h1>
 				<p>Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
 			</div>
@@ -90,13 +104,13 @@
 	</div>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-6 my-auto">
+			<div data-aos="flip-left" class="col-md-6 my-auto">
 				<div class="container">
 				<h1>Fully Responsive Design</h1>
 				<p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively! When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
 				</div>
 			</div>
-			<div class="col-md-6 px-0">
+			<div data-aos="fade-left" class="col-md-6 px-0">
 				<img src="vyrus-alyen-2020-004-1080x611.jpg" width="100%" height="480">
 			</div>
 		</div>
@@ -175,5 +189,25 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+var mybutton = document.getElementById("topbtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  AOS.init();
+</script>
 </body>
 </html>
